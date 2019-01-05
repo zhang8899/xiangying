@@ -1,0 +1,297 @@
+@charset "UTF-8";
+/* CSS Document */
+body, p, dl, dd, ul, ol, li, div, h1, h2, h3, h4, h5, h6, form, input, table, tr, td, fieldset {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #1d1d1d; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  min-width: 630px;
+  font-family: "微软雅黑"; }
+
+img {
+  border: 0;
+  display: block; }
+
+input {
+  outline: none; }
+
+body {
+  background: #f4f7f9; }
+
+/* 头部 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.21);
+  position: fixed;
+  z-index: 999; }
+  .header .header_left {
+    width: 33%; }
+    .header .header_left .logo {
+      float: left;
+      background: #67d3e0;
+      text-align: center; }
+      .header .header_left .logo a {
+        display: flex;
+        padding: 18px 46px;
+        box-sizing: border-box; }
+        .header .header_left .logo a img {
+          width: 30%;
+          height: 40px; }
+        .header .header_left .logo a h3 {
+          line-height: 42px;
+          font-size: 26px;
+          color: #fff; }
+    .header .header_left .sect {
+      float: left; }
+      .header .header_left .sect a {
+        display: block;
+        padding: 32px 25px;
+        float: left;
+        box-sizing: border-box;
+        position: relative; }
+        .header .header_left .sect a span {
+          display: block;
+          width: 20px;
+          height: 20px;
+          background: #C5C5C5;
+          font-size: 10px;
+          text-align: center;
+          line-height: 20px;
+          position: absolute;
+          top: 16%;
+          left: 40px;
+          color: #fff; }
+      .header .header_left .sect .mec .icon_mec {
+        display: block;
+        width: 16px;
+        height: 13px;
+        background: url(../img/mec.jpg) no-repeat; }
+      .header .header_left .sect .tishi {
+        padding: 30px 25px; }
+        .header .header_left .sect .tishi .icon_tishi {
+          display: block;
+          width: 15px;
+          height: 17px;
+          background: url(../img/tishi.jpg) no-repeat; }
+      .header .header_left .sect .mec2 .icon_mec2 {
+        display: block;
+        width: 17px;
+        height: 13px;
+        background: url(../img/mec2.jpg) no-repeat; }
+  .header .header_right {
+    flex: 1;
+    float: left;
+    margin-left: 16%; }
+    .header .header_right .search {
+      width: 60%;
+      float: left;
+      line-height: 78px;
+      color: #abacde; }
+      .header .header_right .search input {
+        width: 100%;
+        font-size: 10px;
+        padding: 10px 0;
+        text-indent: 10px;
+        border: 2px solid #f4f7f9;
+        box-sizing: border-box; }
+    .header .header_right .login_nav {
+      float: right;
+      display: flex; }
+      .header .header_right .login_nav .nav {
+        padding: 30px;
+        box-sizing: border-box; }
+      .header .header_right .login_nav .login {
+        padding: 12px;
+        box-sizing: border-box; }
+
+/* 头部 end*/
+@media screen and (max-width: 1280px) {
+  .header_left {
+    width: 40% !important; } }
+
+@media screen and (max-width: 1080px) {
+  .header_left {
+    width: 45% !important; } }
+
+@media screen and (max-width: 960px) {
+  .search {
+    width: 80% !important; } }
+
+@media screen and (max-width: 800px) {
+  .header {
+    display: block !important; }
+  .header_left {
+    width: 100% !important; }
+  .header_right {
+    width: 100% !important;
+    margin-left: 0 !important; }
+  .sect {
+    float: right !important; }
+  .search {
+    width: 68% !important; } }
+
+/*  内容 */
+.section {
+  padding-top: 78px;
+  height: 100%; }
+  .section .sec {
+    width: 80%;
+    float: left;
+    padding: 0 30px;
+    box-sizing: border-box; }
+  .section .nav_right {
+    width: 20%;
+    height: 100%;
+    background: #2a2f43;
+    position: fixed;
+    right: 0;
+    bottom: -78px; }
+    .section .nav_right .list {
+      padding-top: 22px; }
+      .section .nav_right .list .list_one a {
+        display: flex;
+        height: 60px;
+        line-height: 60px;
+        text-indent: 18px;
+        align-items: center;
+        color: #fff;
+        position: relative; }
+        .section .nav_right .list .list_one a:hover {
+          color: #67d3e0; }
+        .section .nav_right .list .list_one a:hover span {
+          border-color: #67d3e0; }
+        .section .nav_right .list .list_one a img {
+          width: 17px;
+          height: 15px;
+          margin: 0 18px; }
+        .section .nav_right .list .list_one a span {
+          width: 6px;
+          height: 6px;
+          border-top: 2px solid #fff;
+          border-left: 2px solid #fff;
+          transform: rotate(-45deg);
+          position: absolute;
+          top: 26px;
+          right: 16px; }
+
+.section .sec {
+  padding: 24px 30px 18px; }
+  .section .sec .sec_row .sec_top {
+    font-size: 24px;
+    color: #fd5c63;
+    line-height: 60px; }
+  .section .sec .sec_row .secon {
+    margin-top: 20px; }
+    .section .sec .sec_row .secon .secon_left {
+      width: 33.3%;
+      padding: 0 15px;
+      box-sizing: border-box;
+      float: left; }
+      .section .sec .sec_row .secon .secon_left .panel {
+        padding: 20px;
+        background: #fff;
+        margin-bottom: 20px;
+        box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        .section .sec .sec_row .secon .secon_left .panel .copmose_left .widget {
+          border: 1px solid #eaebec; }
+          .section .sec .sec_row .secon .secon_left .panel .copmose_left .widget ul .head {
+            padding: 16px 15px;
+            background: #f5f5f5;
+            font-size: 16px;
+            color: #000;
+            font-weight: 600;
+            border-bottom: 1px solid #dcdcdc; }
+          .section .sec .sec_row .secon .secon_left .panel .copmose_left .widget ul li {
+            background: #fff;
+            border-bottom: 1px solid #dcdcdc; }
+            .section .sec .sec_row .secon .secon_left .panel .copmose_left .widget ul li a {
+              display: block;
+              padding: 16px 15px;
+              font-size: 14px;
+              color: #555555;
+              overflow: hidden; }
+              .section .sec .sec_row .secon .secon_left .panel .copmose_left .widget ul li a i {
+                display: inline-block;
+                width: 15px;
+                height: 12px;
+                background: url(../img/email.jpg) no-repeat;
+                margin-right: 12px; }
+              .section .sec .sec_row .secon .secon_left .panel .copmose_left .widget ul li a span {
+                padding: 3px 10px;
+                background: #67d3e0;
+                color: #fff;
+                float: right;
+                font-size: 8px;
+                border-radius: 4px; }
+    .section .sec .sec_row .secon .secon_right {
+      width: 66.6%;
+      padding: 0 15px;
+      box-sizing: border-box;
+      float: left; }
+      .section .sec .sec_row .secon .secon_right .panel_wid {
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        .section .sec .sec_row .secon .secon_right .panel_wid .copmose_right {
+          border: 1px solid  #ddd; }
+          .section .sec .sec_row .secon .secon_right .panel_wid .copmose_right .panel_head {
+            padding: 16px 15px;
+            background: #f5f5f5;
+            font-size: 16px;
+            color: #000;
+            font-weight: 600;
+            border-bottom: 1px solid #dcdcdc; }
+          .section .sec .sec_row .secon .secon_right .panel_wid .copmose_right .panel_body {
+            padding: 32px; }
+            .section .sec .sec_row .secon .secon_right .panel_wid .copmose_right .panel_body .form_head {
+              padding: 12px 20px;
+              font-size: 12px;
+              color: #7d64c5;
+              background: #d4d5f3;
+              border: 1px solid #bbbdee;
+              margin-bottom: 20px; }
+            .section .sec .sec_row .secon .secon_right .panel_wid .copmose_right .panel_body .email .form_control {
+              width: 100%;
+              padding: 5px 8px;
+              font-size: 18px;
+              color: #ababab;
+              height: 40px;
+              resize: none;
+              box-sizing: border-box;
+              margin-bottom: 15px;
+              border: 1px solid #ccc; }
+            .section .sec .sec_row .secon .secon_right .panel_wid .copmose_right .panel_body .email .area {
+              height: 200px; }
+            .section .sec .sec_row .secon .secon_right .panel_wid .copmose_right .panel_body .email [type="submit"] {
+              padding: 8px 15px;
+              font-size: 14px;
+              color: #fff;
+              background: #fd5c63;
+              margin-top: 60px;
+              border: 0; }
+
+@media screen and (max-width: 990px) {
+  .sec {
+    width: 100% !important; }
+  .secon_left {
+    float: none !important;
+    width: 100% !important; }
+  .secon_right {
+    float: none !important;
+    width: 100% !important; } }
+
+@media screen and (max-width: 800px) {
+  .nav_right {
+    display: none !important; } }

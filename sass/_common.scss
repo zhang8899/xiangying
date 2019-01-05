@@ -1,0 +1,287 @@
+
+@import "base";
+$fontSize: 16px;
+
+
+body{
+ 
+    background: #f4f7f9;
+}
+
+/* 头部 */
+.header{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.21);
+    position: fixed;
+    z-index: 999;
+    .header_left{
+        width: 33%;
+        .logo{
+            float: left;
+            background: #67d3e0;
+            text-align: center;
+            a{
+            display: flex;
+            padding:18px 46px;
+            box-sizing: border-box;
+            
+                img{
+                    width: 30%;
+                    height:40px;
+                }
+                h3{
+                    line-height: 42px;
+
+                    font-size: $fontSize+10;
+                    color:#fff;
+                }
+            }
+        }
+        .sect{
+            float: left;
+                a{
+                display: block;
+                padding:32px 25px;
+                float: left;
+                box-sizing: border-box;
+                position: relative; 
+                span{
+                    display:block;
+                    width: 20px;
+                    height: 20px;
+                    background: #C5C5C5;
+                    font-size:10px;
+                    text-align: center;
+                    line-height: 20px;
+                    position: absolute;
+                    top:16%;
+                    left:40px;
+                    color: #fff;
+                }
+            }
+            .mec{
+
+                .icon_mec{
+                    display:block;
+                    width: 16px;
+                    height: 13px;
+                    background: url(../img/mec.jpg) no-repeat;
+                
+                }
+                
+            }
+            .tishi{
+                padding:30px 25px;
+                .icon_tishi{
+                    display:block;
+                    width: 15px;
+                    height: 17px;
+                    background: url(../img/tishi.jpg) no-repeat;
+                }
+            }
+            .mec2{
+                .icon_mec2{
+                    display:block;
+                    width: 17px;
+                    height: 13px;
+                    background: url(../img/mec2.jpg) no-repeat;
+                }
+            }
+        }
+    }
+    .header_right{
+        flex: 1;
+        float: left;
+        margin-left: 16%;
+        .search{
+            width: 60%;
+            float: left;
+            line-height: 78px;
+            color:#abacde;
+            input{
+             width:100%;
+            font-size: 10px;
+            padding: 10px 0;
+            text-indent: 10px;
+            border: 2px solid #f4f7f9;
+            box-sizing: border-box;
+            }
+        }
+       .login_nav{
+           float:right;
+            display: flex;
+        .nav{
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .login{
+            padding:12px;
+            box-sizing: border-box;
+
+        } 
+       }
+        
+    }
+    
+}
+/* 头部 end*/
+
+
+
+@media screen and(max-width: 1280px){
+    
+    .header_left {
+        width: 40% !important;
+    }
+    
+}
+@media screen and(max-width: 1080px){
+    
+    .header_left {
+        width: 45% !important;
+    }
+    
+}
+
+@media screen and(max-width: 960px){
+    
+    .search {
+        width: 80% !important;
+    }
+    
+}
+@media screen and(max-width: 800px){
+    .header{
+        display: block !important;
+    }
+    .header_left {
+        width: 100% !important;
+    }
+    .header_right{
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    .sect{
+        float: right !important;
+    }
+    .search {
+        width: 68% !important;
+    }
+}
+
+// @media (max-width: 640px)
+// .header-left {
+//     width: 100% !important;
+// }
+// @media (max-width: 768px)
+// .header-left {
+//     width: 48% !important;
+// }
+// @media (max-width: 991px)
+// .header-left {
+//     width: 45% !important;
+// }
+// @media (max-width: 1024px)
+// .header-left {
+//     width: 45% !important;
+// }
+// @media (max-width: 1080px)
+// .header-left {
+//     width: 40% !important;
+// }
+// @media (max-width: 1280px)
+// .header-left {
+//     width: 36% !important;
+// }
+// @media (max-width: 1366px)
+// .header-left {
+//     width: 34% !important;
+// }
+// @media (max-width: 1440px)
+// .header-left {
+//     width: 33%;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  内容 */
+.section{
+
+    padding-top: 78px;
+    height: 100%;
+
+    .sec{
+        width: 80%;
+        float: left;
+        padding: 0 30px;
+        box-sizing: border-box;
+        
+    }
+   
+    .nav_right{
+        width: 20%;
+        height: 100%;
+        background:#2a2f43;
+        position: fixed;
+        right: 0;
+        bottom:-78px;
+        .list{
+            padding-top:22px;
+            .list_one{
+                a{
+                    display: flex;
+                    height: 60px;
+                    line-height: 60px;
+                    text-indent: 18px;
+                    align-items: center;
+                    color: #fff;
+                    position: relative;
+                    &:hover{
+                        color:#67d3e0;
+                    }
+                    &:hover span{
+                        border-color: #67d3e0;
+                    }
+                    img{
+                        width: 17px;
+                        height: 15px;
+                        margin: 0 18px;
+                    }
+
+                    span{
+                        width: 6px;
+                        height: 6px;
+                        border-top: 2px solid #fff;
+                        border-left: 2px solid #fff;
+                        transform: rotate(-45deg);
+                        position: absolute;
+                        top:26px;
+                        right: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+    
+     
+
+
+
+
+

@@ -1,0 +1,186 @@
+
+@import "common";
+
+
+.section{
+    .sec{
+       
+        padding:24px 30px 18px;
+        
+        .sec_row{
+         
+           
+            .sec_top{
+                font-size: 24px;
+                color:#fd5c63;
+                line-height: 60px;
+            }
+            .secon{
+                margin-top: 20px;
+                padding: 20px;
+               background: #fff;
+             
+                box-shadow: 0 -1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+                .sec_grids{
+                    width: 100%;
+                    font-size: 10px;
+                    color:#d9d9d9;
+                    margin-bottom: 40px;
+                    overflow: hidden;
+                    .row1{
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding: 0 15px;
+                        p{
+                        line-height: 43px;
+                        text-align: center;
+                        border:1px solid #d9d9d9;
+                        }
+                    }
+                    .row2{
+                        width: 50%;
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 0 15px;
+                       
+                        p{
+                            line-height: 43px;
+                            text-align: center;
+                            border:1px solid #d9d9d9;
+                        }
+                    }
+                    .row3{
+                        width: 33.3%;
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 0 15px;
+                        p{
+                            line-height: 43px;
+                            text-align: center;
+                            border:1px solid #d9d9d9;
+                        }
+                    }
+                    .row4{
+                        width:25%;
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 0 15px;
+                        p{
+                            line-height: 43px;
+                            text-align: center;
+                            border:1px solid #d9d9d9;
+                        }
+                    }
+                    .row5{
+                        width:16.6%;
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 0 15px;
+                        p{
+                            line-height: 43px;
+                            text-align: center;
+                            border:1px solid #d9d9d9;
+                        }
+                    }
+                    .row61{
+                        width:66.6%;
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 0 15px;
+                        p{
+                            line-height: 43px;
+                            text-align: center;
+                            border:1px solid #d9d9d9;
+                        }
+                    }
+                    .row62{
+                        width:33.3%;
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 0 15px;
+                        p{
+                            line-height: 43px;
+                            text-align: center;
+                            border:1px solid #d9d9d9;
+                        }
+                    }
+                    .row7{
+                        width: 50%;
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 0 15px;
+                       
+                        p{
+                            line-height: 43px;
+                            text-align: center;
+                            border:1px solid #d9d9d9;
+                        }
+                       
+                    }
+                    .row71{
+                        width: 25%;
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 0 15px;
+
+                        p{
+                            line-height: 43px;
+                            text-align: center;
+                            border:1px solid #d9d9d9;
+                        } 
+                    }
+                    .row8{
+                        width:33.3%;
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 0 15px;
+                       
+                        p{
+                            line-height: 43px;
+                            text-align: center;
+                            border:1px solid #d9d9d9;
+                        }
+                       
+                    }
+                    .row81{
+                        width:16.6%;
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 0 15px;
+
+                        p{
+                            line-height: 43px;
+                            text-align: center;
+                            border:1px solid #d9d9d9;
+                        } 
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media screen and(max-width:990px){
+    .row1,.row2,.row3,.row4,.row5,.row61,.row62,.row7,.row71,.row8,.row81{
+        width: 100% !important;
+    }
+}
+
+@media screen and(max-width:800px){
+    .nav_right{
+        display: none !important;
+    }
+    .sec{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:630px){
+
+    .nav_right{
+        display: none !important;
+    }
+    .sec{
+        width: 100% !important;
+    }
+}
